@@ -1,0 +1,82 @@
+<Module>
+<ModulePrefs title="Custom Gadget"/>
+<Content type="html">
+<![CDATA[
+    <h1>"When is Thursday?"</h1>
+    <div>
+        <button id="letsfindout">When?</button>
+    </div>
+    <div>
+        <p id="maybetomorrow">Thursday is</p>
+    </div>
+    <script>
+        function randint(min, max) {
+            var rand = Math.random() * (max-min) + min;
+            return Math.floor(rand);
+        }
+        function randarr(array) {
+            return array[randint(0,array.length)];
+        }
+        function probablyyesterday() {
+            var times = ["hours", "days", "weeks", "months", "years", "decades", "centuries", "millenia"];
+            var whens = ["yesterday", "today", "tomorrow"];
+            var time = randarr(times);
+            var when = randarr(whens);
+            var now = new Date();
+            var thursday = new Date();
+            thursday = thursday.setDate(thursday.getDate() + (11 - thursday.getDay()) %7);
+            switch (when) {
+                case "yesterday":
+                    now = now - 86400000;
+                    console.log(now);
+                    break;
+                case "tomorrow":
+                    now = now - -86400000;
+                    console.log(now);
+                    break;
+                case "today":
+                    break;
+            }
+            var dist = thursday - now;
+            switch (time) {
+                case "hours":
+                    dist = dist / 1000 / 60 / 60;
+                    document.getElementById("maybetomorrow").innerHTML = "Thursday is " + dist + " hours from " + when;
+                    break;
+                case "days":
+                    dist = dist / 1000 / 60 / 60 / 24;
+                    document.getElementById("maybetomorrow").innerHTML = "Thursday is " + dist + " days from " + when;
+                    break;
+                case "weeks":
+                    dist = dist / 1000 / 60 / 60 / 24 / 7;
+                    document.getElementById("maybetomorrow").innerHTML = "Thursday is " + dist + " weeks from " + when;
+                    break;
+                case "months":
+                    dist = dist / 1000 / 60 / 60 / 24 / 30;
+                    document.getElementById("maybetomorrow").innerHTML = "Thursday is " + dist + " months from " + when;
+                    break;
+                case "years":
+                    dist = dist / 1000 / 60 / 60 / 24 / 365.25;
+                    document.getElementById("maybetomorrow").innerHTML = "Thursday is " + dist + " years from " + when;
+                    break;
+                case "decades":
+                    dist = dist / 1000 / 60 / 60 / 24 / 365.25 / 10;
+                    document.getElementById("maybetomorrow").innerHTML = "Thursday is " + dist + " decades from " + when;
+                    break;
+                case "centuries":
+                    dist = dist / 1000 / 60 / 60 / 24 / 365.25 / 100;
+                    document.getElementById("maybetomorrow").innerHTML = "Thursday is " + dist + " centuries from " + when;
+                    break;
+                case "millenia":
+                    dist = dist / 1000 / 60 / 60 / 24 / 365.25 / 1000;
+                    document.getElementById("maybetomorrow").innerHTML = "Thursday is " + dist + " millenia from " + when;
+                    break;
+            }
+            console.log(when);
+            console.log(time);
+        }
+        document.getElementById("letsfindout").addEventListener("click",function(){probablyyesterday()})
+    </script>   
+]]>
+</Content>
+</Module>
