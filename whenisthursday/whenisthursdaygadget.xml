@@ -1,14 +1,16 @@
 <Module>
-<ModulePrefs title="Custom Gadget"/>
+<ModulePrefs title="whenisthursday"/>
 <Content type="html">
 <![CDATA[
-    <h1>"When is Thursday?"</h1>
-    <div>
-        <button id="letsfindout">When?</button>
-    </div>
-    <div>
-        <p id="maybetomorrow">Thursday is</p>
-    </div>
+    <body style="background-color:black;font-family:courier;color:cyan;">
+        <h1>"When is Thursday?"</h1>
+        <div>
+            <button style="font-family:courier;color:lime;background-color:black;border-radius:0px;border-left-style:solid;border-top-style:solid;border-right-style:double;border-bottom-style:double;border-bottom-width:3px;border-right-width:3px;border-top-width:1px;border-left-width:1px;border-color:lime;" id="letsfindout">When?</button>
+        </div>
+        <div>
+            <p id="maybetomorrow">Thursday is</p>
+        </div>
+    </body>
     <script>
         function randint(min, max) {
             var rand = Math.random() * (max-min) + min;
