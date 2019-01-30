@@ -3,25 +3,27 @@
 <Content type="html">
 <![CDATA[
     <style>
-        .body {
-            background-color:black
-            font-family:courier;
-            color:cyan;
-        }
-        .button {
-            font-family:courier;
-            color:lime;
-            background-color:black;
-            border-radius:0px;
-            border-left-style:solid;
-            border-top-style:solid;
-            border-right-style:double;
-            border-bottom-style:double;
-            border-left-width:1px;
-            border-top-width:1px;
-            border-right-width:3px;
-            border-bottom-width:3px;
-            border-color:lime;
+        html{
+            .body {
+                background-color:black
+                font-family:courier;
+                color:cyan;
+            }
+            .button {
+                font-family:courier;
+                color:lime;
+                background-color:black;
+                border-radius:0px;
+                border-left-style:solid;
+                border-top-style:solid;
+                border-right-style:double;
+                border-bottom-style:double;
+                border-left-width:1px;
+                border-top-width:1px;
+                border-right-width:3px;
+                border-bottom-width:3px;
+                border-color:lime;
+            }
         }
     </style>
     <body>
