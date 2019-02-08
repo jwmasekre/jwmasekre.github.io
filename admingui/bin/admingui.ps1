@@ -52,7 +52,7 @@ function run-dhcp {
 #form
 
 #drawing the form
-Add-Type -AssemblyName system.Windows.Forms, System.drawing
+Add-Type -AssemblyName system.Windows.Forms, System.drawing, presentationframework
 [Windows.Forms.Application]::EnableVisualStyles()
 
 #window
@@ -191,11 +191,12 @@ $gpmc.Add_Click({ run-gpmc })
 $dhcp.Add_Click({ run-dhcp })
 
 [void]$CIOAdminConsole.ShowDialog()
+
 # SIG # Begin signature block
 # MIIFeQYJKoZIhvcNAQcCoIIFajCCBWYCAQExCzAJBgUrDgMCGgUAMGkGCisGAQQB
 # gjcCAQSgWzBZMDQGCisGAQQBgjcCAR4wJgIDAQAABBAfzDtgWUsITrck0sYpfvNR
-# AgEAAgEAAgEAAgEAAgEAMCEwCQYFKw4DAhoFAAQUTSHRSpI47p7z5ucf4vNArAWD
-# 4UagggMQMIIDDDCCAfSgAwIBAgIQUMjY2l+/9JVLGAiXLtGKBzANBgkqhkiG9w0B
+# AgEAAgEAAgEAAgEAAgEAMCEwCQYFKw4DAhoFAAQUNknVKDsS5HQZpcT2udzNbrwd
+# P7WgggMQMIIDDDCCAfSgAwIBAgIQUMjY2l+/9JVLGAiXLtGKBzANBgkqhkiG9w0B
 # AQsFADAeMRwwGgYDVQQDDBNqd21hc2VrcmUuZ2l0aHViLmlvMB4XDTE5MDIwNzE3
 # MTMzN1oXDTIwMDIwNzE3MzMzN1owHjEcMBoGA1UEAwwTandtYXNla3JlLmdpdGh1
 # Yi5pbzCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALXN+XHDeRbETLMQ
@@ -215,11 +216,11 @@ $dhcp.Add_Click({ run-dhcp })
 # andtYXNla3JlLmdpdGh1Yi5pbwIQUMjY2l+/9JVLGAiXLtGKBzAJBgUrDgMCGgUA
 # oHgwGAYKKwYBBAGCNwIBDDEKMAigAoAAoQKAADAZBgkqhkiG9w0BCQMxDAYKKwYB
 # BAGCNwIBBDAcBgorBgEEAYI3AgELMQ4wDAYKKwYBBAGCNwIBFTAjBgkqhkiG9w0B
-# CQQxFgQUgUSA2nnz01GiqpOhHcS+6DuZIbUwDQYJKoZIhvcNAQEBBQAEggEAl6/z
-# Gz/+qzMyP3PDhVD2oh28bfiGker+l+W5l1CogQPT/uQ8FihVJ6e24qF3vS6ccko4
-# P88jm0IgvjlZLxrVkGLdFoo8vV/4V6ELbbCfnWiPXJ1yDQtz9AqJ4sJPRSo/aOxE
-# wfge0gcqqanLKolqevHyGEV0/gkT80p4MVKqgpoeKKFlxzFX0a0Xmb817IWGHWFS
-# e9b+0Gk47dn0Mo6/gg5P+8PKaeh2RzdT7YwNyhTNEm0krCr6FF36tCwhcICqFC1Q
-# F8vTf4u64sD0ZBh81pvZPcZ0CtOXGnFkS5pi4WljIF3lPJzDQLg6Aw7+Vq+yppb+
-# 6IPjYy1w31AsHr8uAw==
+# CQQxFgQUjNuRVj1WLFgCaKgEIftdwi+TVM4wDQYJKoZIhvcNAQEBBQAEggEAftt0
+# G5C6h4OFXVrR6G0z4I28sRAVxXMoPyh3U1djTGI7sEuRVJ/Od88UDWK6OgIEKsgL
+# H+1ohbdwCEVy+z2J3Gca1O7dRB0zhyTLqI1sh+Lyl0+fs04uk7K2Wu0vDDCErLWF
+# wYRKz+B9VxWDwbR/d+7lqJdFhe6D9uF7u7wTxLHssODyBU6gGTmBtcd7o38zqBDb
+# WOFWnrpn8kSptSuh0mYGmnTrVHni5ECOuTGNZ63/6rvKN0nHo0zri5isqJxH/7v9
+# VNGPlWeyEDjcsoL/hyNYwBCufcq9nZCJfSOvzCZePRw6prwvZg1AYQDbYkeL6WJs
+# V6PO3PLahsX7krbaUA==
 # SIG # End signature block
