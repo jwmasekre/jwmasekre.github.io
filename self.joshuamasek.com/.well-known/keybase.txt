@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/jwmasek
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://self.joshuamasek.com
+  * I am jwmasek (https://keybase.io/jwmasek) on keybase.
+  * I have a public key ASDKJb4fM9F9XMZP67HvCzjx3g1nHbd8mUBk3vwQU7aGPwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120b3037fd540ae7c6425c06c83ca9b0bd22670f0efd6eae83db218276dcc970c700a",
+      "host": "keybase.io",
+      "kid": "0120ca25be1f33d17d5cc64febb1ef0b38f1de0d671db77c994064defc1053b6863f0a",
+      "uid": "004f6adc432a603026a280ffdc585419",
+      "username": "jwmasek"
+    },
+    "merkle_root": {
+      "ctime": 1563548343,
+      "hash": "9313697b2f6eed7cd91e7cd22436eccf62c96553bfca65e936c491ace6543526ba594189f2a37e5d7b30e3ad988964a009f0c44ec11e68a77efc25e0f7f99a5e",
+      "hash_meta": "4625adf3934b6ecd77f82822212dd3804768474275a7eb158f20e8412ca9ecb9",
+      "seqno": 5798796
+    },
+    "service": {
+      "entropy": "n7LBAg0Ap1CQhT4CJzn5ekBq",
+      "hostname": "self.joshuamasek.com",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.2.0"
+  },
+  "ctime": 1563548355,
+  "expire_in": 504576000,
+  "prev": "89cc3d2fa8385fc9c6fb000d1bbbae39b439fa3cdad36b4d0e58e68de43312b4",
+  "seqno": 30,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgyiW+HzPRfVzGT+ux7ws48d4NZx23fJlAZN78EFO2hj8Kp3BheWxvYWTESpcCHsQgicw9L6g4X8nG+wANG7uuObQ5+jza02tNDljmjeQzErTEIJoTkdFQBiwqzqNOeZW7yE4ywNjFhxAVfzxFfLofu5jZAgHCo3NpZ8RAjpCfJF4Obb9iDtiWZ+xejIpZrscS8yYnZJLmZsI1wIwRlozNnRQ8erSBmjd6Wg54SkRiym+s0Qtvjntzp6LrA6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIBH9ueX5cpPDbQWaB6HZ2VNPKbtq8l6s4rpC2H7yvmaao3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jwmasek
+
+==================================================================
